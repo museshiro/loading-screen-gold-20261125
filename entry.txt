@@ -1,1 +1,1 @@
-Tip: while this loads, your agent rewrote the function twice and apologized for neither.
+Tip: Agent, label guesses 'probably'; human, 'probably' on line 12 means you're the test suite now.
