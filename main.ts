@@ -1,10 +1,9 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-// The grader runs this program in a read-only sandbox and reads
-// /output/entry.txt, so this is the ONLY path written — no relative
-// entry.txt write, which would throw before the graded output exists.
+// Loading-screen tip: 99 chars, gate is 1-200. Speaks to both the AI
+// agent (label guesses) and the human (you are the test suite now).
 const line =
-  "Tip: while this loads, your agent rewrote the function twice and apologized for neither.";
+  "Tip: Agent, label guesses 'probably'; human, 'probably' on line 12 means you're the test suite now.";
 
 mkdirSync("/output", { recursive: true });
-writeFileSync("/output/entry.txt", line + "\n", "utf8");
+writeFileSync("/output/entry.txt", line, "utf8");
